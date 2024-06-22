@@ -1,0 +1,12 @@
+pipeline {
+    agent any
+
+
+    stages {
+        stages('Git Pull') {
+	    steps {
+	        git 'https://github.com/venkateshnk28/nani.git'
+	    }
+	}
+    }
+}
